@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>DMPs for Tri-Agency Grants</title>
+
+		<link rel="stylesheet" href="reveal/reset.css">
+		<link rel="stylesheet" href="reveal/reveal.css">
+		<link rel="stylesheet" href="reveal/theme/simple.css">
+
+		<style>
+			:root {
+				--uvic-blue: #005493;
+				--uvic-gold: #c78a00;
+				--uvic-light: #eef4fa;
+				--r-link-color: #005493;
+				--r-link-color-hover: #002f52;
+				--r-heading-color: #002f52;
+			}
+			.reveal { font-size: 30px; }
+			.reveal h2 { font-size: 1.6em; }
+			.reveal h3 { font-size: 1.1em; color: var(--uvic-blue); }
+			.reveal .blue { color: var(--uvic-blue); font-weight: bold; }
+			.reveal .gold { color: var(--uvic-gold); font-weight: bold; }
+			.reveal .left { text-align: left; }
+			.reveal .small { font-size: 0.75em; }
+			.reveal .xsmall { font-size: 0.6em; }
+			.reveal ul, .reveal ol { display: block; }
+			.reveal li { margin-bottom: 0.35em; }
+
+			.reveal table { font-size: 0.7em; margin: 0.6em auto; }
+			.reveal table th { background: var(--uvic-blue); color: #fff; border: none; padding: 0.4em 0.6em; }
+			.reveal table td { border-bottom: 1px solid #cfd8e3; padding: 0.4em 0.6em; vertical-align: top; }
+			.reveal table tr:nth-child(even) td { background: var(--uvic-light); }
+
+			.reveal .footer { font-size: 0.45em; margin-top: 2em; color: #555; }
+			.reveal .footer hr { border: none; border-top: 1px solid #ccc; }
+
+			.reveal .cols { display: flex; gap: 1.2em; text-align: left; }
+			.reveal .cols > div { flex: 1; }
+			.reveal .card { background: var(--uvic-light); border-left: 6px solid var(--uvic-blue); padding: 0.5em 0.8em; font-size: 0.72em; text-align: left; }
+			.reveal .card.gold { border-left-color: var(--uvic-gold); font-weight: normal; color: inherit; }
+			.reveal .card h4 { margin: 0 0 0.3em; font-size: 1.05em; color: #002f52; text-transform: none; }
+			.reveal .card ul { margin: 0 0 0 1em; }
+
+			.reveal .heard { font-size: 0.7em; font-style: italic; color: #444; border-left: 4px solid var(--uvic-gold); padding-left: 0.6em; margin: 0 0 0.8em; text-align: left; }
+			.reveal .tag { display: inline-block; font-size: 0.55em; text-transform: uppercase; letter-spacing: 0.08em; background: var(--uvic-gold); color: #fff; padding: 0.15em 0.6em; border-radius: 3px; margin-bottom: 0.4em; }
+			.reveal .stat { font-size: 2.4em; font-weight: bold; color: var(--uvic-blue); line-height: 1; }
+			.reveal .stat-label { font-size: 0.65em; color: #444; }
+			.reveal .divider h2 { color: #fff; }
+			.reveal .divider p { color: #e6eef6; }
+			.reveal del { color: #8a8a8a; }
+			.reveal ins { text-decoration: none; color: var(--uvic-blue); font-weight: bold; }
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- TITLE -->
+				<section>
+					<h2>Writing a<br/>Data Management Plan<br/>for Tri-Agency Grant Applications</h2>
+					<h3>What's new in the UVic DMP Template</h3>
+					<br/>
+					<p>Shahira Khair<br/><span class="small">Data Curation Librarian, UVic Libraries</span></p>
+
+					<div class="footer">
+						<hr/>
+						<p>Contact: <a href="mailto:researchdata@uvic.ca">researchdata@uvic.ca</a> | <a href="https://libguides.uvic.ca/researchdata">libguides.uvic.ca/researchdata</a><br/>
+						Adapted from <a href="https://nyu-dataservices.github.io/WritingDMP-GrantApplications/">Writing a Data Management Plan for Grant Applications</a> by Vicky Steeves &amp; Nick Wolf (NYU), CC BY-NC 4.0.<br/>
+						This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+					</div>
+
+					<aside class="notes">
+						Welcome. Press 's' to open speaker notes. Today: a quick refresher on why DMPs matter for Tri-Agency funding, then most of our time on the changes we've made to the UVic DMP Template in response to what researchers told us in focus groups.
+					</aside>
+				</section>
+
+				<!-- WHAT IS RDM -->
+				<section>
+					<h2>What is Research Data Management?</h2>
+					<p>The processes of managing data throughout <span class="blue">the research lifecycle</span> to guide the collection, documentation, storage, sharing, and preservation of research data.</p>
+					<p class="small">Good RDM benefits <span class="gold">the community</span> and <span class="gold">the original researcher</span>.</p>
+
+					<aside class="notes">
+						RDM isn't a one-time task at the end of a project. It runs alongside the whole research lifecycle, from planning and collection through to preservation and reuse.
+					</aside>
+				</section>
+
+				<!-- WHAT IS DATA -->
+				<section>
+					<h2>What are Research Data?</h2>
+					<p>Data that are used as primary sources to support technical or scientific enquiry, research, scholarship, or creative practice, and that are used as evidence in the research process and/or are commonly accepted in the research community as necessary to validate research findings and results.</p>
+					<p class="xsmall">Tri-Agency Research Data Management Policy (2021), definitions.</p>
+					<p class="small">Research data spans disciplines: surveys, interviews, images, code, field notes, instrument output, archival sources, 3D models, and more.</p>
+
+					<aside class="notes">
+						Emphasise that this applies to every discipline, not just the sciences. Humanities and creative-practice researchers have research data too.
+					</aside>
+				</section>
+
+				<!-- TRI-AGENCY POLICY -->
+				<section>
+					<h2>The Tri-Agency RDM Policy</h2>
+					<p class="small">CIHR, NSERC and SSHRC, building on the <em>Tri-Agency Statement of Principles on Digital Data Management</em> (2016)</p>
+					<table>
+						<tr>
+							<th>Institutional Strategies</th>
+							<th>Data Management Plans</th>
+							<th>Data Deposit</th>
+						</tr>
+						<tr>
+							<td>Each eligible institution posts an RDM strategy, including UVic.</td>
+							<td>Required at application for <strong>selected funding opportunities</strong>, with more added over time. DMPs may be assessed as part of the application.</td>
+							<td>Grant recipients will deposit the data, metadata and code that support their research conclusions in a digital repository. This requirement is being phased in.</td>
+						</tr>
+					</table>
+					<p class="small"><a href="https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/tri-agency-research-data-management-policy">Read the Tri-Agency RDM Policy</a></p>
+
+					<aside class="notes">
+						The three pillars of the policy. Check the agencies' page for the current list of funding opportunities that require a DMP. It changes as new opportunities are added. Even when a DMP isn't required, writing one is good practice and is expected under the policy's principles.
+					</aside>
+				</section>
+
+				<!-- THE SOLUTION -->
+				<section>
+					<h2>The Solution</h2>
+					<h3>DATA MANAGEMENT PLAN</h3>
+					<p>A formal document that describes how you plan to collect, organize, document, store, secure, preserve, and share your data throughout the lifecycle of a research project.</p>
+					<p class="fragment"><span class="gold">It is a living document!</span></p>
+
+					<aside class="notes">
+						A DMP written at the application stage is a plan, not a contract. You're expected to revisit and update it as the project evolves.
+					</aside>
+				</section>
+
+				<!-- HIGH LEVEL VIEW -->
+				<section>
+					<h2>High-Level View of a DMP</h2>
+					<table>
+						<tr>
+							<th>Data Collection</th>
+							<th>Documentation</th>
+							<th>Storage</th>
+							<th>Retention &amp; Deposit</th>
+							<th>Roles</th>
+						</tr>
+						<tr>
+							<td>What data, in what formats, with what tools? Is any of it sensitive?</td>
+							<td>How will others (and future you) understand it?</td>
+							<td>Where will you store and back up data, and who can access it?</td>
+							<td>What will you keep, where, for how long, and what will you share?</td>
+							<td>Who is responsible for what, and what will it cost?</td>
+						</tr>
+					</table>
+					<p class="xsmall">After Steeves &amp; Wolf, <a href="https://nyu-dataservices.github.io/WritingDMP-GrantApplications/">nyu-dataservices.github.io/WritingDMP-GrantApplications</a></p>
+
+					<aside class="notes">
+						These map directly onto the sections of the UVic template, which we'll walk through shortly.
+					</aside>
+				</section>
+
+				<!-- DMP ASSISTANT -->
+				<section>
+					<h2>How It Works: DMP Assistant</h2>
+					<div class="cols">
+						<div>
+							<p class="small">A free, bilingual, national DMP tool from the <a href="https://alliancecan.ca/">Digital Research Alliance of Canada</a>.</p>
+							<ol class="small">
+								<li>Go to <a href="https://dmp-pgd.ca/">dmp-pgd.ca</a> and sign in, choosing <strong>University of Victoria</strong> as your organization</li>
+								<li>Create a plan and select the <strong>University of Victoria DMP Template (UVIC)</strong></li>
+								<li>Answer the questions with UVic guidance alongside</li>
+								<li>Share with collaborators, or export to Word/PDF for your application</li>
+							</ol>
+						</div>
+						<div>
+							<div class="card">
+								<h4>Also in DMP Assistant</h4>
+								<ul>
+									<li>Public example DMPs</li>
+									<li>Discipline-specific templates</li>
+									<li>Demo videos and guidance</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<aside class="notes">
+						Live demo here if time allows. Show where to pick the UVic template and how to export. Many researchers export to Word partway through, which comes up again in the focus group findings.
+					</aside>
+				</section>
+
+				<!-- DIVIDER: WHAT WE HEARD -->
+				<section data-background-color="#005493" class="divider">
+					<h2>What We Heard</h2>
+					<p>Findings from UVic DMP user focus groups, 2026</p>
+
+					<aside class="notes">
+						Over the summer of 2026 we ran focus groups with UVic researchers who had written DMPs, comparing the UVic template with a simplified template and talking about the platform and support.
+					</aside>
+				</section>
+
+				<!-- FINDINGS -->
+				<section>
+					<h2>Focus Group Findings</h2>
+					<div class="cols">
+						<div class="card">
+							<h4>The template teaches</h4>
+							Detailed, segmented questions make people stop and think. Specificity is valued.
+						</div>
+						<div class="card gold">
+							<h4>…but it's hard to answer</h4>
+							Concepts like <strong>metadata standards</strong>, <strong>repositories</strong>, and <strong>end-of-project handling</strong> are unfamiliar, and it's hard to know at the grant stage.
+						</div>
+					</div>
+					<br/>
+					<div class="cols">
+						<div class="card">
+							<h4>The platform mostly works</h4>
+							DMP Assistant worked for most, but plans often move to Word or Google Docs, and the collaboration features aren't well used.
+						</div>
+						<div class="card gold">
+							<h4>People like people</h4>
+							Workshops and direct support are universally liked. How do we connect them to the template?
+						</div>
+					</div>
+
+					<aside class="notes">
+						The core tension: the detail that makes the template educational is the same detail that makes it hard. We wanted something in between, keeping the structure while lowering the barrier.
+					</aside>
+				</section>
+
+				<!-- RECOMMENDATIONS -->
+				<section>
+					<h2>What Researchers Suggested</h2>
+					<ul class="small left">
+						<li>Simplify the template: <span class="blue">plainer language, less redundancy</span></li>
+						<li>Add more <span class="blue">pre-written options</span> and boilerplate responses</li>
+						<li><span class="blue">Cross-reference ethics (HREB) application questions</span> directly</li>
+						<li>Point to <span class="blue">key contacts</span> in the template</li>
+						<li>Address the <span class="blue">timing mismatch</span> (and career-stage anxiety) of planning at application</li>
+						<li>Build a reviewed library of <span class="blue">"good" exemplar DMPs</span></li>
+						<li>Support <span class="blue">lab-level DMPs</span>, and plans that are a subset of a larger system</li>
+					</ul>
+
+					<aside class="notes">
+						The first five shaped the template revision you'll see next. Exemplars and lab-level plans are on our roadmap for 2027.
+					</aside>
+				</section>
+
+				<!-- DIVIDER: WHAT CHANGED -->
+				<section data-background-color="#005493" class="divider">
+					<h2>What We Changed</h2>
+					<p>The UVic DMP Template, revised November 2026</p>
+
+					<aside class="notes">
+						Here's how the revised template responds to each of those themes.
+					</aside>
+				</section>
+
+				<!-- AT A GLANCE -->
+				<section>
+					<h2>At a Glance</h2>
+					<div class="cols" style="text-align:center;">
+						<div><div class="stat">25 → 21</div><div class="stat-label">questions</div></div>
+						<div><div class="stat">4 → 10</div><div class="stat-label">questions with checkbox options</div></div>
+						<div><div class="stat">11</div><div class="stat-label">guidance boxes linked to the HREB application</div></div>
+					</div>
+					<br/>
+					<table>
+						<tr><th>Before</th><th>Now</th></tr>
+						<tr><td>4. Preservation</td><td><ins>4. Retention and Preservation</ins></td></tr>
+						<tr><td>5. Sharing and Reuse</td><td><ins>5. Deposit and Sharing</ins></td></tr>
+						<tr><td>Licensing and IP under <em>Sensitive Data and Legal Compliance</em></td><td>Licensing moved to <ins>5.4 Terms of reuse</ins></td></tr>
+					</table>
+
+					<aside class="notes">
+						Same eight-section structure researchers valued, but fewer questions and many more pick-lists. Section names now match the Tri-Agency policy's own language: retention vs. deposit.
+					</aside>
+				</section>
+
+				<!-- CHANGE 1: SIMPLIFY -->
+				<section>
+					<span class="tag">Change 1</span>
+					<h2>Less Redundancy</h2>
+					<p class="heard">"Simplify the template: language, redundancy."</p>
+					<table>
+						<tr><th>Removed or merged</th><th>What happened</th></tr>
+						<tr><td><del>Describe how you will organize, name, and version-control your files</del></td><td>Removed; file organization now sits in the Section 1 introduction</td></tr>
+						<tr><td><del>How will you make sure documentation is captured consistently?</del></td><td>Removed; 2.1 asks what documentation you will create</td></tr>
+						<tr><td><del>Where will hardcopy notebooks and physical samples be stored?</del></td><td>New <strong>Physical storage</strong> checkbox in 3.2</td></tr>
+						<tr><td><del>How will the team access, modify, and contribute data?</del></td><td>Merged into 3.3 storage &amp; access across active phases</td></tr>
+						<tr><td><del>How will you ensure your data is preservation friendly?</del></td><td>Removed; Section 4 guidance covers de-identification, software and metadata needed for reuse</td></tr>
+					</table>
+
+					<aside class="notes">
+						Each removed question was either covered by another question or by the guidance. Fewer, clearer questions, without losing the coverage.
+					</aside>
+				</section>
+
+				<!-- CHANGE 2: UNFAMILIAR CONCEPTS -->
+				<section>
+					<span class="tag">Change 2</span>
+					<h2>Explaining Unfamiliar Concepts</h2>
+					<p class="heard">"Metadata standards, repositories, end-of-project handling remain unfamiliar."</p>
+					<div class="cols">
+						<div class="card">
+							<h4>Metadata standards</h4>
+							A plain-language definition: what metadata is, what a standard is, and why following one helps reuse.
+						</div>
+						<div class="card">
+							<h4>Retention vs. deposit</h4>
+							Explains the Tri-Agency distinction: <em>retention</em> = keeping data safe after the project; <em>deposit</em> = placing it in a repository.
+						</div>
+						<div class="card">
+							<h4>Licences</h4>
+							New question on terms of reuse, with each Creative Commons option explained in one line.
+						</div>
+					</div>
+
+					<aside class="notes">
+						The retention guidance also notes the agencies' proposed minimum retention of 5 years after the end of the grant, award or publication (whichever is last) for data underlying published conclusions. Ethics approvals, agreements and community protocols may also set retention and destruction requirements.
+					</aside>
+				</section>
+
+				<!-- CHANGE 3: PICK LISTS -->
+				<section>
+					<span class="tag">Change 3</span>
+					<h2>More Pick-Lists, Less Blank Page</h2>
+					<p class="heard">"Add more pre-written boilerplate responses."</p>
+					<table>
+						<tr><th>Question</th><th>New options</th></tr>
+						<tr><td>3.1 Storage requirements</td><td>&lt; 1 TB · 1–10 TB · &gt; 10 TB · Other</td></tr>
+						<tr><td>4.1 What will be preserved</td><td>Raw · Processed · Analyzed · Other · <strong>None</strong></td></tr>
+						<tr><td>4.2 Where data will be retained</td><td>UVic storage · UVic Systems (TSM) · UVic Libraries (Dataverse) · Another repository · Physical materials</td></tr>
+						<tr><td>5.2 How you will share</td><td>UVic Dataverse (&lt; 5 GB) · FRDR (up to 3 TB) · Journal repository · By request · Not sharing</td></tr>
+						<tr><td>5.3 Dissemination <span class="gold">NEW</span></td><td>Thesis · Conferences · Media · Directly to participants · Publication</td></tr>
+						<tr><td>5.4 Terms of reuse <span class="gold">NEW</span></td><td>CC0 · CC BY · CC BY-SA · CC BY-NC · Custom · Not sharing</td></tr>
+					</table>
+
+					<aside class="notes">
+						Every checkbox question keeps an "Additional information" box, so researchers can still explain. Repository options now show size limits so people can tell which fits their data.
+					</aside>
+				</section>
+
+				<!-- CHANGE 4: HREB -->
+				<section>
+					<span class="tag">Change 4</span>
+					<h2>Linked to Your Ethics Application</h2>
+					<p class="heard">"Refer to HREB application questions more directly."</p>
+					<table>
+						<tr><th>DMP section</th><th>Related HREB application section</th></tr>
+						<tr><td>1. Data Collection</td><td>L.1 Data collection methods · Q.1a Use(s) of data · P Anonymity &amp; confidentiality</td></tr>
+						<tr><td>3. Storage and Backup</td><td>Q.3a/b Means and location of storing data (+ L.1b wording for U.S.-based servers)</td></tr>
+						<tr><td>4. Retention and Preservation</td><td>Q.3c Duration of storage · Q.3d Destroying or archiving data</td></tr>
+						<tr><td>5. Deposit and Sharing</td><td>Q.1c Use(s) of data · Q.4 Dissemination</td></tr>
+						<tr><td>6. Indigenous Data Sovereignty</td><td>H Research involving First Nations, Inuit and Métis Peoples (esp. H.2b)</td></tr>
+						<tr><td>7. Sensitive Data</td><td>Q.1c Use(s) of data · O Free and informed consent (O.2, O.3)</td></tr>
+					</table>
+
+					<aside class="notes">
+						Guidance boxes now name the matching HREB section, so answers stay consistent and you can reuse text between the two applications. The new 5.3 dissemination question deliberately mirrors HREB Q.4.
+					</aside>
+				</section>
+
+				<!-- CHANGE 5: CONTACTS -->
+				<section>
+					<span class="tag">Change 5</span>
+					<h2>Who to Ask, Right Where You Need It</h2>
+					<p class="heard">"Refer to key contacts in the template."</p>
+					<table>
+						<tr><th>If you're stuck on…</th><th>The template now points you to</th></tr>
+						<tr><td>Storage, backup, sensitive-data infrastructure</td><td>Research Computing: <a href="mailto:arcsupport@uvic.ca">arcsupport@uvic.ca</a></td></tr>
+						<tr><td>Choosing a repository, preparing data for deposit</td><td>UVic Libraries: <a href="mailto:researchdata@uvic.ca">researchdata@uvic.ca</a></td></tr>
+						<tr><td>Human participants and consent</td><td>Human Research Ethics: <a href="mailto:ethics@uvic.ca">ethics@uvic.ca</a></td></tr>
+						<tr><td>Data licensing and sharing agreements with partners</td><td>Research Partnerships: <a href="mailto:researchpartnerships@uvic.ca">researchpartnerships@uvic.ca</a></td></tr>
+					</table>
+
+					<aside class="notes">
+						This responds to the finding that workshops and direct support are universally liked. The template now hands people off to a real person at the moment they need one.
+					</aside>
+				</section>
+
+				<!-- CHANGE 6: WORD VERSION -->
+				<section>
+					<span class="tag">Change 6</span>
+					<h2>Built to Travel Beyond the Platform</h2>
+					<p class="heard">"At some stage it moves to a Google or Word doc."</p>
+					<div class="cols">
+						<div class="card">
+							<h4>A Word version of the template</h4>
+							<ul>
+								<li>Cover table: title, PI, contributors, abstract, funder, grant ID, date, version</li>
+								<li>Clickable checkboxes</li>
+								<li>Numbered questions that match DMP Assistant</li>
+							</ul>
+						</div>
+						<div class="card">
+							<h4>Easy to finalize</h4>
+							<ul>
+								<li>"How to use this template" instructions up front</li>
+								<li>Guidance in shaded boxes you can delete from your final plan</li>
+								<li>Introductory guidance on policies, responsibilities, and resources</li>
+							</ul>
+						</div>
+					</div>
+
+					<aside class="notes">
+						Rather than fight the move to Word, we support it. Start in DMP Assistant or in Word; the numbering matches either way. The version field supports the "living document" message.
+					</aside>
+				</section>
+
+				<!-- WHAT'S NEXT -->
+				<section>
+					<h2>What's Next</h2>
+					<table>
+						<tr><th>When</th><th>Focus</th><th>What</th></tr>
+						<tr><td>Dec 2026</td><td>Exemplar library</td><td>Source, vet, and organize strong example DMPs across disciplines</td></tr>
+						<tr><td>Jan–Feb 2027</td><td>Workshops</td><td>Update workshop materials for the new template; pilot with a small group</td></tr>
+						<tr><td>Feb–Apr 2027</td><td>Lab-level DMPs</td><td>Guidance and a template for lab-level or subset DMPs</td></tr>
+						<tr><td>Summer 2027</td><td>Launch event</td><td>Community event with the Office of Research Services and graduate programs</td></tr>
+					</table>
+					<p class="small">Also exploring: links to <strong>RAIS</strong> application IDs and uploading DMPs alongside ethics applications.</p>
+
+					<aside class="notes">
+						The remaining focus group recommendations (exemplars, lab-level plans, and the timing mismatch) are on this roadmap. Feedback on the new template is very welcome.
+					</aside>
+				</section>
+
+				<!-- EXAMPLES -->
+				<section>
+					<h2>Example Data Management Plans</h2>
+					<ul class="small left">
+						<li>DMP Assistant <a href="https://dmp-pgd.ca/public_plans">Public DMPs</a>: plans that researchers have chosen to share</li>
+						<li>Digital Research Alliance of Canada <a href="https://alliancecan.ca/en/services/research-data-management/learning-and-training/dmp-exemplars">DMP exemplars</a>, by discipline</li>
+						<li>Coming soon: a reviewed library of <span class="blue">UVic exemplar DMPs</span></li>
+					</ul>
+
+					<aside class="notes">
+						Exemplars were one of the most-requested supports in the focus groups.
+					</aside>
+				</section>
+
+				<!-- RESOURCES -->
+				<section>
+					<h2>DMP Resources at UVic</h2>
+					<div class="cols">
+						<div>
+							<p class="small"><a href="https://dmp-pgd.ca/"><strong>DMP Assistant</strong></a>: sign in with UVic and choose the <strong>University of Victoria DMP Template (UVIC)</strong>.</p>
+							<p class="small"><a href="https://libguides.uvic.ca/researchdata"><strong>UVic Research Data guide</strong></a>: storage, file formats, documentation, metadata, Indigenous data sovereignty, licences.</p>
+						</div>
+						<div>
+							<p class="small"><strong>Repositories</strong></p>
+							<ul class="small">
+								<li>UVic Dataverse (Borealis)</li>
+								<li><a href="https://www.frdr-dfdr.ca/">FRDR</a>, for large datasets</li>
+								<li><a href="https://www.re3data.org/">re3data.org</a>, to find domain repositories</li>
+							</ul>
+						</div>
+					</div>
+
+					<aside class="notes">
+						Point people to the research data guide for the detail behind each section of the template.
+					</aside>
+				</section>
+
+				<!-- CONCLUSION -->
+				<section>
+					<h2>Thank you! Questions?</h2><br/>
+					<p>Request an RDM consultation: <a href="mailto:researchdata@uvic.ca">researchdata@uvic.ca</a></p>
+					<p>Learn more about RDM: <a href="https://libguides.uvic.ca/researchdata">libguides.uvic.ca/researchdata</a></p>
+					<p>Find your subject librarian: <a href="https://www.uvic.ca/library/research/librarians/index.php">uvic.ca/library</a></p>
+					<p>Get this presentation: <a href="https://skhair.github.io/dmp/">skhair.github.io/dmp</a></p>
+
+					<div class="footer">
+						<hr/>
+						<p>Adapted from <a href="https://nyu-dataservices.github.io/WritingDMP-GrantApplications/">Writing a Data Management Plan for Grant Applications</a> by Vicky Steeves &amp; Nick Wolf (NYU), CC BY-NC 4.0.<br/>
+						This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+					</div>
+
+					<aside class="notes">
+						Thank you. Invite feedback on the revised template.
+					</aside>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="reveal/reveal.js"></script>
+		<script src="reveal/plugin/notes/notes.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				width: 1200,
+				height: 760,
+				plugins: [ RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
